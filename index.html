@@ -7,58 +7,62 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Sidebar Navigation -->
-  <div id="sidebar">
-    <h2>My Portfolio</h2>
+  <!-- Navigation Header -->
+  <header id="navbar">
     <nav>
-      <ul>
-        <li><a href="#" onclick="showSection('resume')">About Me</a></li>
-        <li><a href="#" onclick="showSection('about')">Mechanical Engineering</a></li>
-        <li><a href="#" onclick="showSection('finance')">Finance Research</a></li>
-        <li><a href="#" onclick="showSection('contact')">Contact Me</a></li>
-      </ul>
+      <button onclick="showSection('resume')">About Me</button>
+      <button onclick="showSection('engineering')">Mechanical Engineering</button>
+      <button onclick="showSection('finance')">Finance Research</button>
+      <button onclick="showSection('contact')">Contact Me</button>
     </nav>
-    <div id="contact-info">
-      <p>Email: yourname@example.com</p>
-      <p>Phone: +123 456 7890</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Profile</a></p>
-    </div>
-  </div>
+  </header>
 
   <!-- Main Content Area -->
   <div id="main-content">
     <section id="resume" class="content">
-        <div class="profile-container">
-          <img src="assets/IMG_1856 (1).jpeg" alt="Profile Picture" class="profile-image">
-          <div class="profile-text">
-            <h2>About Me</h2>
-            <p>Hi, I’m [Your Name], a passionate engineer with expertise in [your specialties].</p>
-            <p>Welcome to my portfolio! Here, you can learn about my journey and projects.</p>
-          </div>
+      <div class="item-container">
+        <img src="assets/IMG_1856 (1).jpeg" alt="Profile Picture" class="profile-image">
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>Hi, I’m [Your Name], a passionate engineer with expertise in [your specialties].</p>
+          <p>Welcome to my portfolio! Here, you can learn about my journey and projects.</p>
         </div>
+      </div>
+
+      <div class="images-container">
+        <img src="assets/FSUSig_Horizontal_Color.png" alt="Uni 1" class="uni-image">
+        <img src="assets/UMD_ENG_Left_Color_web.png" alt="Uni 2" class="uni-image">
+      </div>
+
+      <div class="item-container">
+        <img src="assets/IMG_7025.jpeg" alt="imece presentation" class="profile-image">
+      </div>
     </section>
 
     <section id="engineering" class="content" style="display: none;">
       <h1>Mechanical Engineering</h1>
       <p>Learn about my background, my journey as an engineer, and my interests.</p>
+      <div class="images-container">
+        <img src="assets/NASA-Logo.svg.png" alt="Company 1" class="company-image">
+        <img src="assets/Logo_of_the_Carrier_Corporation.svg.png" alt="Company 2" class="company-image">
+        <img src="assets/Jet_Propulsion_Laboratory_logo.svg.png" alt="Company 3" class="company-image">
+        <img src="assets/AFOSR+Logo.png" alt="Company 4" class="company-image">
+      </div>
     </section>
 
     <section id="finance" class="content" style="display: none;">
       <h1>Finance Research</h1>
       <p>This section covers my insights and research into financial topics.</p>
     </section>
-    
+
     <section id="contact" class="content" style="display: none;">
       <h1>Contact Me</h1>
       <p>Get in touch with me for collaboration or more information.</p>
       <p>Email: yourname@example.com</p>
       <p>Phone: +123 456 7890</p>
     </section>
-    
   </div>
 
   <script src="scripts.js"></script>
 </body>
 </html>
-
-

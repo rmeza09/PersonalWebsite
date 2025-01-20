@@ -58,13 +58,41 @@
   /* Profile Container */
   .item-container {
     display: flex;
-    align-items: center;
-    background-color: #d3d0cb;
-    border-radius: 15px;
+    align-items: center; /* Align image and text on the same vertical level */
+    background-color: #d3d3d3; /* Light gray background */
     padding: 20px;
-    max-width: 1000px;
-    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 900px; /* Set a max width to keep content neat */
+    margin: 20px auto; /* Center the container */
   }
+  
+  /* Left side: Image */
+  .item-container img {
+    width: 400px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  /* Right side: Title & Text */
+  .item-text {
+    display: flex;
+    flex-direction: column; /* Stack title and text */
+    justify-content: center; /* Center text vertically */
+    max-width: 600px; /* Keep text from stretching too far */
+  }
+  
+  .item-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space between title and paragraph */
+  }
+  
+  .item-text p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
   
   /* Profile Image */
   .profile-image {
@@ -93,7 +121,7 @@
   .uni-image {
     width: 400px; /* Adjust width as needed */
     object-fit: contain; /* Ensure images scale proportionally */
-    margin: 0 75px;
+    margin: 0 25px;
   }
   
   /* Responsive Design */
@@ -115,4 +143,27 @@
       flex-direction: column;
     }
   }
+  
+  p {
+    margin-bottom: 15px; /* Adjust spacing between paragraphs */
+    line-height: 1.6; /* Improve readability */
+  }
+
+  h2 {
+    margin-bottom: 15px; /* Adjust spacing between paragraphs */
+    line-height: 1.6; /* Improve readability */
+    font-size: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .item-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .item-container img {
+      margin: 0 0 20px 0; /* Add spacing below the image */
+    }
+  }
+  
   

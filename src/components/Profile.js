@@ -1,9 +1,10 @@
 import React from "react";
+import profileImage from "../assets/IMG_7074.jpg";
 
 function Profile() {
   return (
     <div className="item-container">
-      <img src="/assets/IMG_7074.jpg" alt="Profile Picture" className="profile-image" />
+      <img src= {profileImage} alt="Profile Picture" className="profile-image" />
       <div className="profile-text">
         <h2>About Me</h2>
         <p>

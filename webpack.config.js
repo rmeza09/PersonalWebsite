@@ -16,10 +16,15 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+        
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,  // Match image file extensions
+        type: "asset/resource", // Replaces file-loader in Webpack 5
       },
     ],
   },

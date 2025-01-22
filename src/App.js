@@ -3,6 +3,10 @@ import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import Profile from "./components/Profile";
 import "./styles.css";
+import NASALogo from "./assets/NASA-Logo.svg.png";
+import JPLLogo from "./assets/Jet_Propulsion_Laboratory_logo.svg.png";
+import AFOSRLogo from "./assets/AFOSR+Logo.png";
+
 
 function App() {
   const [activeSection, setActiveSection] = useState("resume");
@@ -18,12 +22,24 @@ function App() {
 
         <Section id="engineering" title="Mechanical Engineering" isActive={activeSection === "engineering"}>
           <p>Learn about my background, my journey as an engineer, and my interests.</p>
+          
           <div className="images-container">
-            <img src="assets/NASA-Logo.svg.png" alt="Company 1" className="company-image" />
-            <img src="assets/Jet_Propulsion_Laboratory_logo.svg.png" alt="Company 3" className="company-image" />
-            <img src="assets/AFOSR+Logo.png" alt="Company 4" className="company-image" />
+            <img src={NASALogo} alt="NASA" className="company-image" />
+            <img src={JPLLogo} alt="JPL" className="company-image" />
+            <img src={AFOSRLogo} alt="AFOSR" className="company-image" />
+          </div>
+
+          <div className="engineering-details">
+            <h3>My Engineering Experience</h3>
+            <p>I have worked on various projects involving sensor technology, fluid dynamics, and aerospace engineering.</p>
+            <ul>
+              <li>🚀 Developed hypersonic flow models</li>
+              <li>🛰️ Designed sensor integration for structural monitoring</li>
+              <li>🔬 Conducted research on fluid-structure interactions</li>
+            </ul>
           </div>
         </Section>
+
 
         <Section id="finance" title="Finance Research" isActive={activeSection === "finance"}>
           <p>This section covers my insights and research into financial topics.</p>

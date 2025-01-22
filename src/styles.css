@@ -46,14 +46,16 @@
     padding: 20px;
   }
   
-  /* Content Section */
-  .content {
-    display: none;
-  }
-  
-  .content:target {
-    display: block;
-  }
+ /* Hide inactive sections */
+.hidden {
+  display: none;
+}
+
+/* Show active section */
+.active {
+  display: block;
+}
+
   
   /* Profile Container */
   .item-container {

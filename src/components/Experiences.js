@@ -4,6 +4,7 @@ import IMG_1856 from "../assets/IMG_1856.jpg";
 import IMG_6784 from "../assets/IMG_6784.jpg";
 import OE12922 from "../assets/_OE12922.jpg";
 import IMG_3399 from "../assets/IMG_3399.jpg";
+import IMG_4667 from "../assets/IMG_4667.jpg";
 
 function Experiences() {
   return (
@@ -42,6 +43,16 @@ function Experiences() {
         <img src={OE12922} alt="Senior Design Award Ceremony" className="profile-image" />
         <div className="item-text">
           <h2>Tallahassee, Florida - 2023</h2>
+          <p>
+            Another major event in my engineering career, discussing sensor technology applications.
+          </p>
+        </div>
+      </div>
+
+      <div className="item-container">
+        <img src={IMG_4667} alt="MSFC Visit" className="profile-image" />
+        <div className="item-text">
+          <h2>Huntsville, Alabama - 2023</h2>
           <p>
             Another major event in my engineering career, discussing sensor technology applications.
           </p>

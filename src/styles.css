@@ -174,4 +174,19 @@
     }
   }
   
+  .education-container {
+    display: flex;
+    flex-direction: column; /* Stack logos & text vertically */
+    align-items: center; /* Center everything */
+    text-align: center; /* Align text to center */
+    margin-top: 20px;
+  }
+  
+
+  
+  .education-text {
+    margin-top: 15px; /* Space between images and text */
+    font-size: 1.2em;
+    font-weight: italic;
+  }
   

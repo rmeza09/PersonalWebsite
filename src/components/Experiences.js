@@ -33,7 +33,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Pasadena, California - 2023</h2>
           <p>
-            Presented at the Senior Design Award Ceremony, showcasing a mechanical engineering capstone project.
+          From June to December of 2023, I contributed to NASA’s Jet Propulsion Laboratory as a hardware engineering intern, where I played a key role in developing a cryogenic dynamometer for extreme environment robotics. My experience spans precision mechanical design, finite element analysis, and systems integration research for aerospace applications.
           </p>
         </div>
       </div>

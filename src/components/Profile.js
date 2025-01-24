@@ -21,10 +21,19 @@ function Profile() {
         </div>
       </div>
 
-      <div className="images-container">
-        <img src={FSULogo} alt="Florida State University" className="uni-image" />
-        <img src={UMDLogo} alt="University of Maryland" className="uni-image" />
+      
+
+      <div className="education-container">
+        <div className="images-container">
+          <img src={FSULogo} alt="Florida State University" className="uni-image" />
+          <img src={UMDLogo} alt="University of Maryland" className="uni-image" />
+        </div>
+        <div className="education-text">
+          <p>Bachelor of Science in Mechanical Engineering from Florida State University</p>
+          <p>Master of Science in Mechanical Engineering from the University of Maryland, College Park</p>
+        </div>
       </div>
+
 
       {/* Add Experiences Component */}
       <Experiences />

@@ -54,7 +54,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Huntsville, Alabama - 2023</h2>
           <p>
-            Another major event in my engineering career, discussing sensor technology applications.
+            Another major event in my engineering career , discussing sensor technology applications.
           </p>
         </div>
       </div>

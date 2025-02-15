@@ -46,15 +46,15 @@
     padding: 20px;
   }
   
- /* Hide inactive sections */
-.hidden {
-  display: none;
-}
+  /* Hide inactive sections */
+  .hidden {
+    display: none;
+  }
 
-/* Show active section */
-.active {
-  display: block;
-}
+  /* Show active section */
+  .active {
+    display: block;
+  }
 
   
   /* Profile Container */
@@ -188,3 +188,47 @@
     font-weight: italic;
   }
   
+
+    /* Standard Carousel Container */
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 300px;
+  }
+  
+  /* Image Styling */
+  .carousel img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Video Styling */
+  .carousel video {
+    width: 300px; /* Match image width */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Navigation Buttons */
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  .prev-btn { left: 5px; }
+  .next-btn { right: 5px; }
+
+  .prev-btn:hover, .next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }

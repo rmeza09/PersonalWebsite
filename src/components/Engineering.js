@@ -1,9 +1,15 @@
 import React from "react";
+import Carousel from "./Carousel"; // Import the Carousel component
+
 import NASALogo from "../assets/NASA-Logo.svg.png";
 import JPLLogo from "../assets/Jet_Propulsion_Laboratory_logo.svg.png";
 import AFOSRLogo from "../assets/AFOSR+Logo.png";
 import CaptureImg from "../assets/Capture.PNG";
-import TempControl from "../assets/IMG_7347.jpg";
+import TempControl1 from "../assets/IMG_7347.jpg";
+import TempControl2 from "../assets/IMG_7318.jpeg";
+import TempControl3 from "../assets/IMG_7351.jpeg";
+import TempControl4 from "../assets/IMG_7369.jpeg";
+//import TempControlVid from "../assets/IMG_7370.mp4";
 import submarinePrint from "../assets/72315635017__05B0C390-E4D2-4AD5-ACB8-7003D435C667.jpg";
 
 function Engineering() {
@@ -18,7 +24,15 @@ function Engineering() {
       </div>
 
       <div className="item-container">
-        <img src={TempControl} alt="Temperature Controller" className="profile-image" />
+        <Carousel media={[TempControl4, TempControl1, TempControl3, TempControl2, "/videos/IMG_7370.mp4"]} altText="Temperature Controller" />
+        <div className="item-text">
+          <h3>PID Temperature Controller - Spring 2025</h3>
+          <p>A research project focused on solid-state rocketry, performed at the University of Maryland.</p>
+        </div>
+      </div>
+    
+      <div className="item-container">
+        <img src={TempControl1} alt="Temperature Controller" className="profile-image" />
         <div className="item-text">
           <h3>PID Temperature Controller - Spring 2025</h3>
           <p>

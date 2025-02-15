@@ -60,12 +60,13 @@
   /* Profile Container */
   .item-container {
     display: flex;
-    align-items: center; /* Align image and text on the same vertical level */
-    background-color: #d3d3d3; /* Light gray background */
+    align-items: center;
+    justify-content: flex-start; /* Ensures image stays on the left */
+    background-color: #e0e0e0; /* Keep your grey background */
     padding: 20px;
     border-radius: 10px;
-    max-width: 900px; /* Set a max width to keep content neat */
-    margin: 20px auto; /* Center the container */
+    max-width: 900px; /* Adjust width to match original design */
+    margin: 20px auto;
   }
   
   /* Left side: Image */
@@ -188,47 +189,73 @@
     font-weight: italic;
   }
   
+ /* ✅ Main Project Section */
+.engineering-container {
+  max-width: 800px; /* Adjust width for visibility */
+  margin: 40px auto; /* Center the section */
+  text-align: center; /* Center title & text */
+  background-color: #e0e0e0; /* Keep grey background */
+  padding: 20px;
+  border-radius: 10px;
+}
 
-    /* Standard Carousel Container */
+/* ✅ Title & Description Styling */
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ✅ Adjust Carousel to Limit Height Instead of Width */
+.carousel {
+  max-width: 600px; /* Keep it centered */
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ✅ Limit Image & Video Height */
+.carousel img, .carousel video {
+  max-height: 400px; /* Set a reasonable height cap */
+  width: auto; /* Let width adjust automatically */
+  object-fit: contain; /* Ensure full image is visible */
+  border-radius: 10px;
+}
+
+
+/* ✅ Navigation Buttons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
   .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 300px;
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Set a max width for smaller screens */
   }
-  
-  /* Image Styling */
-  .carousel img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  /* Video Styling */
-  .carousel video {
-    width: 300px; /* Match image width */
-    height: auto;
-    border-radius: 10px;
-  }
-
-  /* Navigation Buttons */
-  .prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-  }
-
-  .prev-btn { left: 5px; }
-  .next-btn { right: 5px; }
-
-  .prev-btn:hover, .next-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
+}

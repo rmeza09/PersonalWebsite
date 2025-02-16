@@ -20,11 +20,11 @@ function App() {
         <Section id="engineering" isActive={activeSection === "engineering"}>
           <Engineering />
         </Section>
-
+        {/* Render the profile section 
         <Section id="finance" title="Finance Research" isActive={activeSection === "finance"}>
           <p>This section covers my insights and research into financial topics.</p>
         </Section>
-
+        */}
         <Section id="contact" title="Contact Me" isActive={activeSection === "contact"}>
           <p>Email: rmeza@umd.edu</p>
           <p>Phone: (786)-473-5564</p>

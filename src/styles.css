@@ -8,7 +8,7 @@
   /* Body Styling */
   body {
     font-family: "Georgia", serif;
-    background-color: #e7e5df
+    background-color: white /*#e7e5df*/
   }
   
   /* Navigation Bar */
@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Ensures image stays on the left */
-    background-color: #e0e0e0; /* Keep your grey background */
+    background-color: #ececec;/* #e0e0e0; Keep your grey background */
     padding: 20px;
     border-radius: 10px;
     max-width: 900px; /* Adjust width to match original design */
@@ -112,6 +112,7 @@
     justify-content: center; /* Center images horizontally */
     align-items: center; /* Align images vertically on the same line */
     margin-top: 20px; /* Add spacing above the images */
+    margin-bottom: 20px;
     gap: 20px; /* Add even spacing between images */
   }
   
@@ -194,7 +195,7 @@
   max-width: 800px; /* Adjust width for visibility */
   margin: 40px auto; /* Center the section */
   text-align: center; /* Center title & text */
-  background-color: #e0e0e0; /* Keep grey background */
+  background-color: #ececec; /* Keep grey background */
   padding: 20px;
   border-radius: 10px;
 }
@@ -259,3 +260,32 @@
     max-width: 400px; /* Set a max width for smaller screens */
   }
 }
+
+
+/* Wraps all projects & switches to 2 columns on PC */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next row */
+  justify-content: space-evenly; /* Distributes space between items */
+  gap: 20px; /* Space between items */
+  max-width: 1600px; /* Limits width for full-screen layouts */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Each project section */
+.project-item {
+  background-color: #F5F5F5; /* Very light grey */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 20px); /* 50% width with gap adjustment */
+  max-width: 800px; /* Ensures it doesn’t get too big */
+}
+
+/* Stack projects in a single column on smaller screens */
+@media (max-width: 1024px) {
+  .project-item {
+    flex: 1 1 100%; /* Take full width in smaller screens */
+  }
+}
+
+

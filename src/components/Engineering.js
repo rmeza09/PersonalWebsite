@@ -29,80 +29,76 @@ import Submarine3 from "../assets/IMG_7435.jpg";
 
 function Engineering() {
   return (
+    
     <div>
+      <center>
       <p>Learn about my background, my journey as an engineer, and my interests.</p>
-
+      </center>
       <div className="images-container">
         <img src={NASALogo} alt="NASA" className="company-image" />
         <img src={JPLLogo} alt="Jet Propulsion Laboratory" className="company-image" />
         <img src={AFOSRLogo} alt="AFOSR" className="company-image" />
       </div>
 
-      <div className="engineering-container">
-      
-      {/* ✅ Title & Text on Top */}
-      <h3 className="project-title">PID Temperature Controller - Spring 2025</h3>
-      <p className="project-description">
-        A research project focused on solid-state rocketry, performed at the University of Maryland.
-      </p>
+      <div className="projects-container">
+        <div className="project-item">
+        
+          <h3 className="project-title">PID Temperature Controller - Spring 2025</h3>
+          <p className="project-description">
+            A research project focused on solid-state rocketry, performed at the University of Maryland.
+          </p>
+          <Carousel 
+            media={[TempControl4, TempControl1, TempControl3, TempControl2]} 
+            altText="Temperature Controller"
+          />
 
-      {/* ✅ Larger Carousel Below */}
-      <Carousel 
-        media={[TempControl4, TempControl1, TempControl3, TempControl2]} 
-        altText="Temperature Controller"
-      />
+        </div>
+    
+        <div className="project-item">
+        
+          <h3 className="project-title">HERMES Lunar Transport Vehicle - Spring 2023</h3>
+          <p className="project-description">
+            A research project focused on solid-state rocketry, performed at the University of Maryland.
+          </p>
+          <Carousel 
+            media={[Hermes1, Hermes5, Hermes6, Hermes3, Hermes4, Hermes2]} 
+            altText="HERMES Project"
+          />
 
+        </div>
+
+        <div className="project-item">
+        
+          {/* ✅ Title & Text on Top */}
+          <h3 className="project-title">ENME 712 Solid State Rocket Test Bed - Spring 2024</h3>
+          <p className="project-description">
+            A research project focused on solid-state rocketry, performed at the University of Maryland.
+          </p>
+
+          {/* ✅ Larger Carousel Below */}
+          <Carousel 
+            media={[CaptureImg]} 
+            altText="HERMES Project"
+          />
+
+        </div>
+
+        <div className="project-item">
+        
+          {/* ✅ Title & Text on Top */}
+          <h3 className="project-title">Motor Control for Underwater Application - Fall 2023</h3>
+          <p className="project-description">
+            A research project focused on solid-state rocketry, performed at the University of Maryland.
+          </p>
+
+          {/* ✅ Larger Carousel Below */}
+          <Carousel 
+            media={[Submarine1, Submarine2, Submarine3]} 
+            altText="HERMES Project"
+          />
+
+        </div>
       </div>
-      
-
-      <div className="engineering-container">
-      
-      {/* ✅ Title & Text on Top */}
-      <h3 className="project-title">HERMES Lunar Transport Vehicle - Spring 2023</h3>
-      <p className="project-description">
-        A research project focused on solid-state rocketry, performed at the University of Maryland.
-      </p>
-
-      {/* ✅ Larger Carousel Below */}
-      <Carousel 
-        media={[Hermes1, Hermes5, Hermes6, Hermes3, Hermes4, Hermes2]} 
-        altText="HERMES Project"
-      />
-
-      </div>
-
-      <div className="engineering-container">
-      
-      {/* ✅ Title & Text on Top */}
-      <h3 className="project-title">ENME 712 Solid State Rocket Test Bed - Spring 2024</h3>
-      <p className="project-description">
-        A research project focused on solid-state rocketry, performed at the University of Maryland.
-      </p>
-
-      {/* ✅ Larger Carousel Below */}
-      <Carousel 
-        media={[CaptureImg]} 
-        altText="HERMES Project"
-      />
-
-      </div>
-
-      <div className="engineering-container">
-      
-      {/* ✅ Title & Text on Top */}
-      <h3 className="project-title">Motor Control for Underwater Application - Fall 2023</h3>
-      <p className="project-description">
-        A research project focused on solid-state rocketry, performed at the University of Maryland.
-      </p>
-
-      {/* ✅ Larger Carousel Below */}
-      <Carousel 
-        media={[Submarine1, Submarine2, Submarine3]} 
-        altText="HERMES Project"
-      />
-
-      </div>
-
     </div>
   );
 }

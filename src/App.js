@@ -13,11 +13,11 @@ function App() {
       <Navbar setActiveSection={setActiveSection} />
 
       <div id="main-content">
-        <Section id="resume" title="About Me" isActive={activeSection === "resume"}>
+        <Section id="resume" isActive={activeSection === "resume"}>
           <Profile />
         </Section>
 
-        <Section id="engineering" title="Mechanical Engineering" isActive={activeSection === "engineering"}>
+        <Section id="engineering" isActive={activeSection === "engineering"}>
           <Engineering />
         </Section>
 

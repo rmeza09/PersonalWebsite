@@ -11,8 +11,6 @@
     background-color: white /*#e7e5df*/
   }
   
-
-
 /* ✅ General Navbar Styling */
 #navbar {
   width: 100%;
@@ -24,7 +22,16 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  height: 75px;
+  height: 75px; /* Default height */
+  transition: height 0.3s ease-in-out;
+}
+
+/* ✅ Expand Navbar When Mobile Menu Opens */
+#navbar.open {
+  height: 250px; /* Adjust this to fit all buttons */
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 /* ✅ Desktop Navbar */
@@ -53,7 +60,7 @@
   text-align: right;
 }
 
-/* Hamburger Menu Button */
+/* ✅ Hamburger Menu Button */
 .menu-btn {
   background: none;
   border: none;
@@ -64,27 +71,30 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1001;
 }
 
-/* Mobile Nav Dropdown */
+/* ✅ Mobile Nav Dropdown */
 .mobile-nav {
   display: none;
   flex-direction: column;
-  position: absolute;
-  top: 75px;
-  left: 0;
   width: 100%;
-  background-color: #384E77;
   text-align: center;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  padding-top: 10px;
+  background-color: #384E77;
 }
 
 /* ✅ Show Mobile Menu When Open */
 .mobile-nav.open {
   display: flex;
-  max-height: 300px;
+}
+
+/* ✅ Make Navbar Expand When Open */
+#navbar.open .mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .mobile-nav button {
@@ -101,14 +111,22 @@
   border-radius: 5px;
 }
 
-/* ✅ Show/Hide Navbar Based on Screen Size */
+/* ✅ Ensure Hamburger Menu is Visible on Mobile */
 @media (max-width: 768px) {
   .desktop-nav {
-    display: none; /* Hide desktop navbar */
+    display: none;
   }
 
   .menu-btn {
-    display: block; /* Show hamburger menu */
+    display: block;
+  }
+
+  #navbar {
+    height: 75px;
+  }
+
+  #navbar.open {
+    height: auto; /* Ensure navbar expands */
   }
 
   .mobile-nav {
@@ -119,6 +137,8 @@
     display: flex;
   }
 }
+
+
 
 
 
@@ -472,7 +492,32 @@
   display: flex;
   flex-direction: column; /* Stack text and buttons */
   align-items: center; /* Align to the left */
+  text-align: center;
   gap: 10px; /* Add spacing between elements */
+}
+
+/* Mobile Layout: Stack Everything */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center everything */
+    text-align: center;
+  }
+
+  .contact-image {
+    width: 250px; /* Slightly smaller for mobile */
+    margin: 0 auto 15px auto; /* Center image with spacing */
+  }
+
+  .contact-content {
+    align-items: center; /* Center text and buttons */
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons */
+    gap: 10px;
+  }
 }
 
 /* Aligns buttons to the left inside profile-content */
@@ -504,32 +549,38 @@
   margin-left: 10px;
 }
 
+/* General image styling to ensure responsiveness */
 img {
-  max-width: 100%;
+  max-width: 100%; /* Keeps images within their containers */
   height: auto;
   display: block;
 }
 
+/* Constrain elements on mobile */
 @media (max-width: 768px) {
   .experience-container {
-      width: 95%;
-      padding: 10px;
+    width: 95%;
+    padding: 10px;
   }
+
   .item-container {
-      flex-direction: column; /* Stack images and text vertically */
-      align-items: center;
+    flex-direction: column; /* Stack images and text vertically */
+    align-items: center;
   }
+
+  /* Ensure images remain inside their containers */
   img {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
-
-* {
-  max-width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
+/* Explicitly reset image width for desktop screens */
+@media (min-width: 769px) {
+  .profile-image {
+    max-width: 400px; /* Restore default size on desktop */
+    width: 400px;
+  }
 }
 
 

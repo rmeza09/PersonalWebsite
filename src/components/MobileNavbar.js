@@ -6,11 +6,27 @@ function MobileNavbar({ setActiveSection }) {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+
+    // Toggle "open" class on navbar
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+      if (!menuOpen) {
+        navbar.classList.add("open");
+      } else {
+        navbar.classList.remove("open");
+      }
+    }
   };
 
   const handleNavClick = (section) => {
     setActiveSection(section);
-    setMenuOpen(false); // Close menu after clicking a link
+    setMenuOpen(false);
+
+    // Remove "open" class when a button is clicked
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+      navbar.classList.remove("open");
+    }
   };
 
   return (
@@ -29,3 +45,4 @@ function MobileNavbar({ setActiveSection }) {
 }
 
 export default MobileNavbar;
+

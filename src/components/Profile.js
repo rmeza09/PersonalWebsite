@@ -7,7 +7,7 @@ import Experiences from "./Experiences"; // Import new component
 function Profile() {
   return (
     <div>
-      <div className="item-container">
+      <div className="profile-container">
         <img src={IMG_7074} alt="Profile Picture" className="profile-image" />
         <div className="profile-text">
           <h2>About Me</h2>

@@ -8,7 +8,7 @@ import IMG_4667 from "../assets/IMG_4667.jpg";
 
 function Experiences() {
   return (
-    <div>
+    <div className="experiences-container">
       <div className="item-container">
         <img src={IMG_7025} alt="IMECE presentation" className="profile-image" />
         <div className="item-text">

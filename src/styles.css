@@ -57,17 +57,26 @@
   }
 
   
-  /* Profile Container */
-  .item-container {
+  .experiences-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Ensures image stays on the left */
-    background-color: #ececec;/* #e0e0e0; Keep your grey background */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 900px; /* Adjust width to match original design */
-    margin: 20px auto;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    justify-content: space-evenly; /* Distributes space between items */
+    gap: 20px; /* Space between items */
+    max-width: 1800px; /* Limits width for full-screen layouts */
+    margin: 0 auto; /* Center the container */
   }
+
+ /* Ensure each experience block takes up half the space */
+.item-container {
+  display: flex;
+  flex-direction: row; /* Image on left, text on right */
+  align-items: center;
+  flex: 1 1 calc(50% - 40px);
+  max-width: 900px;
+  background-color: #ececec;
+  padding: 20px;
+  border-radius: 10px;
+}
   
   /* Left side: Image */
   .item-container img {
@@ -95,11 +104,29 @@
     font-size: 1rem;
     line-height: 1.6;
   }
+
+   /* Ensure single-column layout on smaller screens */
+   @media (max-width: 1024px) {
+    .item-container {
+      flex: 1 1 100%; /* Full width in smaller screens */
+    }
+  }
   
+  .profile-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Centers the whole section */
+    flex-direction: row; /* Image on left, text on right */
+    background-color: #ececec; /* Light grey background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px; /* Adjust for the centered section */
+    margin: 0 auto; /* Centers the whole block */
+  }
   
   /* Profile Image */
   .profile-image {
-    width: 300px;
+    width: 400px;
     height: auto;
     margin-right: 20px;
     object-fit: cover;
@@ -205,12 +232,16 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .project-description {
   font-size: 16px;
   color: #333;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* ✅ Adjust Carousel to Limit Height Instead of Width */
@@ -287,5 +318,7 @@
     flex: 1 1 100%; /* Take full width in smaller screens */
   }
 }
+
+
 
 

@@ -60,6 +60,11 @@ function Engineering() {
           <p className="project-description">
             A research project focused on solid-state rocketry, performed at the University of Maryland.
           </p>
+          <div className="button-container">             
+            <a href="https://web1.eng.famu.fsu.edu/me/senior_design/2023/team517/" className="link-button" target="_blank" rel="noopener noreferrer">
+                Senior Design Website
+            </a>
+          </div>
           <Carousel 
             media={[Hermes1, Hermes5, Hermes6, Hermes3, Hermes4, Hermes2]} 
             altText="HERMES Project"

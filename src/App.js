@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import Profile from "./components/Profile";
 import Engineering from "./components/Engineering";
+import Contact from "./components/Contact";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./styles.css";
 
 function App() {
@@ -25,9 +27,8 @@ function App() {
           <p>This section covers my insights and research into financial topics.</p>
         </Section>
         */}
-        <Section id="contact" title="Contact Me" isActive={activeSection === "contact"}>
-          <p>Email: rmeza@umd.edu</p>
-          <p>Phone: (786)-473-5564</p>
+        <Section id="contact" isActive={activeSection === "contact"}>
+          <Contact />
         </Section>
       </div>
     </div>

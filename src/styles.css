@@ -11,106 +11,114 @@
     background-color: white /*#e7e5df*/
   }
   
-/* Navigation Bar */
+
+
+  /* ✅ General Navbar Styling */
 #navbar {
   width: 100%;
   background-color: #384E77;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   position: fixed;
   top: 0;
   z-index: 1000;
-  height: 75px; /* Default height when closed */
-  transition: height 0.3s ease-in-out;
-  overflow: hidden; /* Prevents content from overflowing */
+  height: 75px;
 }
 
-/* Navigation Links */
-.nav-links {
-  display: none; /* Hidden by default */
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-}
-
-/* Show menu when open */
-.nav-links.open {
+/* ✅ Desktop Navbar (Visible on large screens) */
+.desktop-nav {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #384E77;
 }
 
-/* Ensure buttons fill width */
-.nav-links button {
+.desktop-nav button {
   background-color: transparent;
   color: white;
   border: none;
   font-size: 1rem;
-  padding: 15px;
-  width: 100%; /* Full width for easy clicking */
-  text-align: center;
+  margin: 0 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-links button:hover {
+.desktop-nav button:hover {
   background-color: #3c6e71;
   color: white;
   border-radius: 5px;
 }
 
-/* Hamburger Menu Button */
+/* ✅ Mobile Navbar (Hidden by default) */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  background-color: #384E77;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0; /* Initially collapsed */
+}
+
+.mobile-nav button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav button:hover {
+  background-color: #3c6e71;
+  color: white;
+  border-radius: 5px;
+}
+
+/* ✅ Mobile Navbar Expand Effect */
+.mobile-nav.open {
+  display: flex;
+  max-height: 300px; /* Expand smoothly */
+}
+
+/* ✅ Hamburger Menu Button */
 .menu-btn {
   background: none;
   border: none;
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
-  display: none;
+  display: none; /* Hidden by default */
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Ensure Navbar Expands */
-#navbar.open {
-  height: auto;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 10px;
-  overflow: visible; /* Allow dropdown to show */
-}
-
-/* Ensure Hamburger Menu is Visible on Mobile */
+/* ✅ Mobile View Adjustments */
 @media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Hide desktop navbar */
+  }
+
   .menu-btn {
-    display: block; /* Show the button on small screens */
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: block; /* Show hamburger menu */
   }
 
-  #navbar {
-    height: 75px; /* Ensure navbar maintains height */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .mobile-nav {
+    display: none;
   }
 
-  .nav-links {
-    display: none; /* Hide menu links by default */
-  }
-
-  .nav-links.open {
+  .mobile-nav.open {
     display: flex;
   }
 }
+
 
 
 

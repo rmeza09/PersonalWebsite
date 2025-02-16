@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles.css";
 
-function Navbar({ setActiveSection }) {
+function MobileNavbar({ setActiveSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -9,27 +9,23 @@ function Navbar({ setActiveSection }) {
   };
 
   const handleNavClick = (section) => {
-    setActiveSection(section); // Update the active section
-    setMenuOpen(false); // Close the menu after clicking
+    setActiveSection(section);
+    setMenuOpen(false); // Close menu after clicking a link
   };
 
   return (
-    <header id="navbar" className={menuOpen ? "open" : ""}>
-      {/* Hamburger Menu */}
+    <div className="mobile-navbar-container">
       <button className="menu-btn" onClick={toggleMenu}>
         {menuOpen ? "✖" : "☰"}
       </button>
 
-      {/* Navigation Links */}
-      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+      <nav className={`mobile-nav ${menuOpen ? "open" : ""}`}>
         <button onClick={() => handleNavClick("resume")}>About Me</button>
-        <button onClick={() => handleNavClick("engineering")}>
-          Mechanical Engineering
-        </button>
+        <button onClick={() => handleNavClick("engineering")}>Mechanical Engineering</button>
         <button onClick={() => handleNavClick("contact")}>Contact Me</button>
       </nav>
-    </header>
+    </div>
   );
 }
 
-export default Navbar;
+export default MobileNavbar;

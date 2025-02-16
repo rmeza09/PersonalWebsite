@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import "../styles.css";
 
 function Navbar({ setActiveSection }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleNavClick = (section) => {
+    setActiveSection(section); // Update the active section
+    setMenuOpen(false); // Close the menu after clicking
+  };
+
   return (
-    <header id="navbar">
-      <nav>
-        <button onClick={() => setActiveSection("resume")}>About Me</button>
-        <button onClick={() => setActiveSection("engineering")}>Mechanical Engineering</button>
-        {/*<button onClick={() => setActiveSection("finance")}>Finance Research</button>*/}
-        <button onClick={() => setActiveSection("contact")}>Contact Me</button>
+    <header id="navbar" className={menuOpen ? "open" : ""}>
+      {/* Hamburger Menu */}
+      <button className="menu-btn" onClick={toggleMenu}>
+        {menuOpen ? "✖" : "☰"}
+      </button>
+
+      {/* Navigation Links */}
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <button onClick={() => handleNavClick("resume")}>About Me</button>
+        <button onClick={() => handleNavClick("engineering")}>
+          Mechanical Engineering
+        </button>
+        <button onClick={() => handleNavClick("contact")}>Contact Me</button>
       </nav>
     </header>
   );

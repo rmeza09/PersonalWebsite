@@ -13,7 +13,7 @@
   
 
 
-  /* ✅ General Navbar Styling */
+/* ✅ General Navbar Styling */
 #navbar {
   width: 100%;
   background-color: #384E77;
@@ -27,7 +27,7 @@
   height: 75px;
 }
 
-/* ✅ Desktop Navbar (Visible on large screens) */
+/* ✅ Desktop Navbar */
 .desktop-nav {
   display: flex;
 }
@@ -40,16 +40,33 @@
   margin: 0 15px;
   padding: 10px;
   cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .desktop-nav button:hover {
   background-color: #3c6e71;
-  color: white;
   border-radius: 5px;
 }
 
-/* ✅ Mobile Navbar (Hidden by default) */
+/* ✅ Mobile Navbar */
+.mobile-navbar-container {
+  width: 100%;
+  text-align: right;
+}
+
+/* Hamburger Menu Button */
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Mobile Nav Dropdown */
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -59,9 +76,15 @@
   width: 100%;
   background-color: #384E77;
   text-align: center;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
-  max-height: 0; /* Initially collapsed */
+}
+
+/* ✅ Show Mobile Menu When Open */
+.mobile-nav.open {
+  display: flex;
+  max-height: 300px;
 }
 
 .mobile-nav button {
@@ -71,36 +94,14 @@
   font-size: 1rem;
   padding: 15px;
   width: 100%;
-  text-align: center;
 }
 
 .mobile-nav button:hover {
   background-color: #3c6e71;
-  color: white;
   border-radius: 5px;
 }
 
-/* ✅ Mobile Navbar Expand Effect */
-.mobile-nav.open {
-  display: flex;
-  max-height: 300px; /* Expand smoothly */
-}
-
-/* ✅ Hamburger Menu Button */
-.menu-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.8rem;
-  cursor: pointer;
-  display: none; /* Hidden by default */
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* ✅ Mobile View Adjustments */
+/* ✅ Show/Hide Navbar Based on Screen Size */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none; /* Hide desktop navbar */
@@ -118,6 +119,7 @@
     display: flex;
   }
 }
+
 
 
 

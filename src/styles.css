@@ -7,9 +7,14 @@
   
   /* Body Styling */
   body {
-    font-family: "Georgia", serif;
+    font-family: 'Roboto', serif;
     background-color: white /*#e7e5df*/
   }
+
+  button {
+    font-family: 'Roboto', serif; /* Match the body font */
+  }
+
   
 /* ✅ General Navbar Styling */
 #navbar {
@@ -17,7 +22,7 @@
   background-color: #384E77;
   padding: 10px 20px;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -122,7 +127,7 @@
   }
 
   #navbar {
-    height: 75px;
+    height: 50px;
   }
 
   #navbar.open {
@@ -179,7 +184,7 @@
   align-items: center;
   flex: 1 1 calc(50% - 40px);
   max-width: 900px;
-  background-color: #ececec;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
 }
@@ -223,7 +228,7 @@
     align-items: center; /* Aligns items vertically */
     justify-content: center; /* Centers the whole section */
     flex-direction: row; /* Image on left, text on right */
-    background-color: #ececec; /* Light grey background */
+    background-color: white; /* Light grey background */
     padding: 20px;
     border-radius: 10px;
     max-width: 800px; /* Adjust for the centered section */
@@ -284,6 +289,15 @@
   p {
     margin-bottom: 15px; /* Adjust spacing between paragraphs */
     line-height: 1.6; /* Improve readability */
+    font-weight: 400;
+  }
+
+  .italic-text {
+    font-style: italic;
+  }
+
+  h1 {
+    font-weight: 900;
   }
 
   h2 {
@@ -411,7 +425,7 @@
 
 /* Each project section */
 .project-item {
-  background-color: #F5F5F5; /* Very light grey */
+  background-color: whie; /* Very light grey */
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 calc(50% - 20px); /* 50% width with gap adjustment */
@@ -497,26 +511,36 @@
 }
 
 /* Mobile Layout: Stack Everything */
+/* Ensure contact container fits within screen height */
 @media (max-width: 768px) {
   .contact-container {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center everything */
+    position: fixed;
+    top: 75px; /* Adjusts for navbar */
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    height: 75%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; /* Aligns content at the top */
+    padding: 10px;
   }
 
   .contact-image {
-    width: 250px; /* Slightly smaller for mobile */
-    margin: 0 auto 15px auto; /* Center image with spacing */
+    width: 250px;
+    margin: 10px auto 0 auto; /* Small top margin to balance */
   }
 
   .contact-content {
-    align-items: center; /* Center text and buttons */
+    align-items: center;
+    margin-top: 25px; /* Adds spacing after the image */
   }
 
   .button-container {
     display: flex;
-    flex-direction: column; /* Stack buttons */
-    gap: 10px;
+    flex-direction: column;
+    gap: 10px; /* Restores button spacing */
   }
 }
 
@@ -580,6 +604,31 @@ img {
   .profile-image {
     max-width: 400px; /* Restore default size on desktop */
     width: 400px;
+  }
+}
+
+
+/* Logo Styling */
+.nav-logo img {
+  height: 50px; /* Adjust size as needed */
+  width: auto;
+  display: block;
+}
+
+/* Ensures logo stays left-aligned */
+.nav-logo {
+  display: flex;
+  
+}
+
+/* Mobile Navbar Adjustments */
+@media (max-width: 768px) {
+  #navbar {
+    padding: 10px;
+  }
+
+  .nav-logo img {
+    height: 40px; /* Slightly smaller on mobile */
   }
 }
 

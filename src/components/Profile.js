@@ -29,8 +29,8 @@ function Profile() {
           <img src={UMDLogo} alt="University of Maryland" className="uni-image" />
         </div>
         <div className="education-text">
-          <p>Bachelor of Science in Mechanical Engineering from Florida State University</p>
-          <p>Master of Science in Mechanical Engineering from the University of Maryland, College Park</p>
+          <p className="italic-text">Bachelor of Science in Mechanical Engineering from Florida State University</p>
+          <p className="italic-text">Master of Science in Mechanical Engineering from the University of Maryland, College Park</p>
         </div>
       </div>
 

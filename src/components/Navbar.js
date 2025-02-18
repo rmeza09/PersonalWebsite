@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 import "../styles.css";
+import Logo from "../assets/R9.png"; // Import the logo
 
 function Navbar({ setActiveSection }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -17,6 +18,12 @@ function Navbar({ setActiveSection }) {
 
   return (
     <header id="navbar">
+      {/* Logo on the left */}
+      <div className="nav-logo">
+        <img src={Logo} alt="R9 Logo" />
+      </div>
+
+      {/* Desktop or Mobile Navbar based on screen size */}
       {isMobile ? (
         <MobileNavbar setActiveSection={setActiveSection} />
       ) : (

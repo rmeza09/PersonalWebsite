@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import IMG_1856 from "../assets/IMG_1855.jpeg";
+import resume from "../assets/Personal Meza 250108 MainResume.pdf";
 
 function Contact() {
     const [copySuccess, setCopySuccess] = useState(false);
@@ -39,7 +40,7 @@ function Contact() {
                             <i className="fab fa-linkedin"></i> LinkedIn
                         </a>
                        
-                        <a href="/resume.pdf" className="link-button resume-button" download>
+                        <a href={resume} className="link-button resume-button" download>
                             <i className="fas fa-file-download"></i> Download Resume
                         </a>
                     </div>

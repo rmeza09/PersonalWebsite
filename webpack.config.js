@@ -26,6 +26,14 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,  // Match image file extensions
         type: "asset/resource", // Replaces file-loader in Webpack 5
       },
+      {
+        test: /\.pdf$/,
+        type: "asset/resource", // Replaces file-loader in Webpack 5
+        generator: {
+          filename: "assets/[name][ext]" // Ensures PDFs are output to the assets folder
+        }
+      }
+      
     ],
   },
   plugins: [

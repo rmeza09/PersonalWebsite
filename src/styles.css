@@ -515,12 +515,12 @@
 @media (max-width: 768px) {
   .contact-container {
     position: fixed;
-    top: 75px; /* Adjusts for navbar */
+    top: 60px; /* Adjusts for navbar */
     width: 90%;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: flex-start; /* Aligns content at the top */
@@ -534,13 +534,14 @@
 
   .contact-content {
     align-items: center;
-    margin-top: 25px; /* Adds spacing after the image */
+    margin-top: 20px; /* Adds spacing after the image */
   }
 
   .button-container {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Restores button spacing */
+    margin-top: 0px;
   }
 }
 

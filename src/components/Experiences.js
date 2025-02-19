@@ -14,8 +14,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Portland, Oregon - 2024</h2>
           <p>
-            In November 2024, I had the incredible opportunity to attend and present a poster on my research at the ASME International Mechanical Engineering Congress in Portland, Oregon. Over three enriching days, I learned about state-of-the-art research, connected with fellow engineers, and engaged in discussions on the future of fiber optic health monitoring systems for structural state evaluation.
-          </p>
+          In November 2024, I had the incredible opportunity to attend and present a poster on my research at the ASME International Mechanical Engineering Congress in Portland, Oregon. Over three enriching days, I learned about state-of-the-art research, connected with fellow engineers, and engaged in discussions on the future of fiber optic health monitoring systems for structural state evaluation.          </p>
         </div>
       </div>
 
@@ -24,8 +23,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Salt Lake City, Utah - 2023</h2>
           <p>
-            Attended and presented research at the SHPE Convention, connecting with professionals and discussing advancements in engineering.
-          </p>
+          In November of 2023, I attended the National Society of Hispanic Professional Engineers. I took the opportunity to connect with recruiters and explore different industries. I negotiated funding for myself and four of my friends through my relationship with the head of the mechanical engineering department at FSU. I was able to secure lodging, travel, and food stipends for our group of five. Contingent on representing FSU, our Region 7 SHPE chapter, and expanding our research interests.           </p>
         </div>
       </div>
 
@@ -34,8 +32,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Pasadena, California - 2023</h2>
           <p>
-          From June to December of 2023, I contributed to NASA’s Jet Propulsion Laboratory as a hardware engineering intern, where I played a key role in developing a cryogenic dynamometer for extreme environment robotics. My experience spans precision mechanical design, finite element analysis, and systems integration research for aerospace applications.
-          </p>
+          From June to December of 2023, I contributed to NASA’s Jet Propulsion Laboratory as a robotic hardware engineering intern, where I played a key role in developing a cryogenic dynamometer for extreme environment robotics. My experience spans precision mechanical design, finite element analysis, and systems integration research for robotic applications.          </p>
         </div>
       </div>
 
@@ -44,8 +41,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Tallahassee, Florida - 2023</h2>
           <p>
-            Another major event in my engineering career, discussing sensor technology applications.
-          </p>
+          In April of 2023, my team and I concluded our senior design project working with NASA Marshall Space Flight Center (MSFC) to develop HERMES, a heavy lunar transport vehicle prototype. During senior design day we presented our final prototype for judging and were awarded the “Best Presentation in Session D”, for space related projects.          </p>
         </div>
       </div>
 
@@ -54,8 +50,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Huntsville, Alabama - 2023</h2>
           <p>
-            Another major event in my engineering career , discussing sensor technology applications.
-          </p>
+          In February of 2023, our capstone senior design team and I traveled to Alabama to visit NASA MSFC where we toured the facility and spoke directly with the senior engineers advising our senior design project. At the time we had a partial prototype we brought to the regolith field at MSFC.          </p>
         </div>
       </div>
 
@@ -64,8 +59,7 @@ function Experiences() {
         <div className="item-text">
           <h2>Collierville, Tennessee - 2022</h2>
           <p>
-            One of my early research experiences in mechanical engineering and data analysis.
-          </p>
+          From May to August of 2022, I participated in my first internship program with Carrier HVAC as a Quality Engineering Intern. During this process I got the opportunity to work in a manufacturing environment designing tools to improve facility processes. I also took the opportunity to lead a team of 9 PTC workers to burndown a backlog of units with a variety of repair issues to ship to customers by the end of the summer.          </p>
         </div>
       </div>
     </div>

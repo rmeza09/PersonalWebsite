@@ -38,6 +38,7 @@ function MobileNavbar({ setActiveSection }) {
       <nav className={`mobile-nav ${menuOpen ? "open" : ""}`}>
         <button onClick={() => handleNavClick("resume")}>About Me</button>
         <button onClick={() => handleNavClick("engineering")}>Engineering Projects</button>
+        {/*<button onClick={() => handleNavClick("finance")}>Finance</button>*/}
         <button onClick={() => handleNavClick("contact")}>Contact Me</button>
       </nav>
     </div>

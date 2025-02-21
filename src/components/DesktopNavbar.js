@@ -6,6 +6,7 @@ function DesktopNavbar({ setActiveSection }) {
     <nav className="desktop-nav">
       <button onClick={() => setActiveSection("resume")}>About Me</button>
       <button onClick={() => setActiveSection("engineering")}>Engineering Projects</button>
+      {/*<button onClick={() => setActiveSection("engineering")}>Finance</button>*/}
       <button onClick={() => setActiveSection("contact")}>Contact Me</button>
     </nav>
   );

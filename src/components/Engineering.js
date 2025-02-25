@@ -101,6 +101,24 @@ function Engineering() {
 
         <div className="project-item">
         
+          <h3 className="project-title">Drone Control Desing and Simulation - Fall 2023</h3>
+          <p className="project-description">
+              In this project I worked 
+          </p>
+          
+          <Carousel 
+            media={[TempControl5, TempControl4, TempControl1, TempControl3, TempControl2]} 
+            altText="Temperature Controller"
+          />
+
+          <p className="project-description">
+          The motivation for this project was to add a flexible heating element to a thin panel surface, which can be excited with an impact hammer to simultaneously measure vibration and temperature effects using FBG sensors. In lieu of having access to a Mach 6 tunnel before traveling to NASA Langley, I designed an analogous system which I can track through a single point vibrometer and the sensor network. The final goal is to test the measurement decoupling algorithm for sensor data processing.
+          </p>
+
+        </div>
+
+        <div className="project-item">
+        
           {/* ✅ Title & Text on Top */}
           <h3 className="project-title">Motor Control for Underwater Application - Fall 2023</h3>
           <p className="project-description">

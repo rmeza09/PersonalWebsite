@@ -20,10 +20,17 @@ import Hermes6 from "../assets/IMG_9954.jpg";
 
 import CaptureImg from "../assets/unnamed303.png";
 import CaptureImg2 from "../assets/unnamed404.png";
+import proposal from "../assets/ENME712 FINAL PROJECT_1.pdf";
 
 import Submarine1 from "../assets/72315635017__05B0C390-E4D2-4AD5-ACB8-7003D435C667.jpg";
 import Submarine2 from "../assets/IMG_7434.jpg";
 import Submarine3 from "../assets/IMG_7435.jpg";
+
+import Drone1 from "../assets/drone_animation.gif";
+import Drone2 from "../assets/hovering_2D_pole_placement.gif";
+import Drone3 from "../assets/drone_output.png";
+import Drone4 from "../assets/Screenshot 2025-02-25 010820.png";
+
 
 //import TempControlVid from "../assets/IMG_7370.mp4";
 //import submarinePrint from "../assets/72315635017__05B0C390-E4D2-4AD5-ACB8-7003D435C667.jpg";
@@ -87,7 +94,7 @@ function Engineering() {
         <div className="project-item">
         
           {/* ✅ Title & Text on Top */}
-          <h3 className="project-title">ENME 712 Solid State Rocket Test Bed - Spring 2024</h3>
+          <h3 className="project-title">Solid State Rocket Test Bed - Spring 2024</h3>
           <p className="project-description">
           In this project I designed a solid-state rocket test bed as part of a mock research proposal to justify budgetary spending for research into solid state propellant erosion, within the combustion chamber of the rocket and how a variety of factors affect the erosion rate. The objective of this proposal was to produce a testing apparatus for a solid-state propellant model rocket body. The erosion rate is directly correlated to the burning rate of the propellant and thus the thrust produced by the model rocket. I quoted budgetary costs for the bill of materials and man hours while creating an example timeline for the execution of the research effort.           </p>
 
@@ -97,30 +104,34 @@ function Engineering() {
             altText="HERMES Project"
           />
 
+          <div className="button-container">             
+            <a href={proposal} className="link-button" download>
+              Download Mock Research Proposal
+            </a>
+          </div>
+
+
         </div>
 
         <div className="project-item">
         
-          <h3 className="project-title">Drone Control Desing and Simulation - Fall 2023</h3>
+          <h3 className="project-title">Quadcopter Control Design and Simulation - Fall 2023</h3>
           <p className="project-description">
-              In this project I worked 
-          </p>
-          
+          This project aimed to develop a target setpoint controller for a 4-rotor drone, leveraging a physics-informed control system to regulate its movement. The drone's dynamics were modeled using a state-space representation, capturing translational and rotational motion across three dimensions. A pole placement method was employed to design a stabilizing feedback controller, ensuring the drone could track desired positions and orientations effectively. Both animations display scenarios where an initial disturbance affects the flight trajectory chosen toward the targeted endpoint.           </p>        
           <Carousel 
-            media={[TempControl5, TempControl4, TempControl1, TempControl3, TempControl2]} 
+            media={[Drone1, Drone4, Drone2, Drone3]} 
             altText="Temperature Controller"
           />
 
           <p className="project-description">
-          The motivation for this project was to add a flexible heating element to a thin panel surface, which can be excited with an impact hammer to simultaneously measure vibration and temperature effects using FBG sensors. In lieu of having access to a Mach 6 tunnel before traveling to NASA Langley, I designed an analogous system which I can track through a single point vibrometer and the sensor network. The final goal is to test the measurement decoupling algorithm for sensor data processing.
-          </p>
+          The primary motivation was to design a precise and robust control system that could actuate the drone efficiently using physics-based insights. The results confirmed that the controller successfully stabilized the drone, achieving smooth transitions toward desired states. The project reinforced key control theory concepts, including state feedback, pole placement, and system modeling, providing valuable insights for real-world UAV stabilization.          </p>
 
         </div>
 
         <div className="project-item">
         
           {/* ✅ Title & Text on Top */}
-          <h3 className="project-title">Motor Control for Underwater Application - Fall 2023</h3>
+          <h3 className="project-title">Motor Control for Submersible Application - Spring 2023</h3>
           <p className="project-description">
           This research project was part of my undergraduate mechatronics course at Florida State University. In this project the team was responsible for creating a protype of a submersible vehicle to demonstrate sensor integration and remote control. In this project I was responsible for developing the guidance system for the submersible, essentially focusing on the rear half of the vehicle. I developed a tethered motor controller to manually guide the vehicle using two rear motors. This system required designing IP65 proof seals around the output shafts to prevent water ingress.          </p>
 

@@ -30,6 +30,7 @@ import Drone1 from "../assets/drone_animation.gif";
 import Drone2 from "../assets/hovering_2D_pole_placement.gif";
 import Drone3 from "../assets/drone_output.png";
 import Drone4 from "../assets/Screenshot 2025-02-25 010820.png";
+import Drone5 from "../assets/drone_3d_output.png";
 
 
 //import TempControlVid from "../assets/IMG_7370.mp4";
@@ -117,9 +118,9 @@ function Engineering() {
         
           <h3 className="project-title">Quadcopter Control Design and Simulation - Fall 2023</h3>
           <p className="project-description">
-          This project aimed to develop a target setpoint controller for a 4-rotor drone, leveraging a physics-informed control system to regulate its movement. The drone's dynamics were modeled using a state-space representation, capturing translational and rotational motion across three dimensions. A pole placement method was employed to design a stabilizing feedback controller, ensuring the drone could track desired positions and orientations effectively. Both animations display scenarios where an initial disturbance affects the flight trajectory chosen toward the targeted endpoint.           </p>        
+          This project aimed to develop a target setpoint controller for a 4-rotor drone, leveraging a physics-informed control system to regulate its movement. The drone's dynamics were modeled using a state-space representation, capturing translational and rotational motion across three dimensions. A pole placement method was employed to design a stabilizing feedback controller, ensuring the drone could track desired positions and orientations effectively. Both animations display scenarios where an initial disturbance affects the flight trajectory chosen toward the targeted endpoint of x=0, y=0, z=0.           </p>        
           <Carousel 
-            media={[Drone1, Drone4, Drone2, Drone3]} 
+            media={[Drone1, Drone4, Drone5, Drone2, Drone3]} 
             altText="Temperature Controller"
           />
 

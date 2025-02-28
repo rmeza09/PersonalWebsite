@@ -5,6 +5,8 @@ import Profile from "./components/Profile";
 import Engineering from "./components/Engineering";
 import Contact from "./components/Contact";
 import Finance from "./components/Finance";
+import PortfolioPie from "./components/PortfolioPie"
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./styles.css";
 
@@ -26,6 +28,7 @@ function App() {
         
         <Section id="finance" title="Finance Research" isActive={activeSection === "finance"}>
           <Finance/>
+          <PortfolioPie/>
         </Section>
         
         <Section id="contact" isActive={activeSection === "contact"}>

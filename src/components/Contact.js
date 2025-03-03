@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import IMG_1856 from "../assets/IMG_1855.jpeg";
-import resume from "../assets/Personal Meza 250108 MainResume.pdf";
+import resume from "../assets/Personal Meza 250224 ResumeMechEng.pdf";
 
 function Contact() {
     const [copySuccess, setCopySuccess] = useState(false);

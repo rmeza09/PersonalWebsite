@@ -11,6 +11,8 @@ import TempControl2 from "../assets/IMG_7318.jpeg";
 import TempControl3 from "../assets/IMG_7351.jpeg";
 import TempControl4 from "../assets/IMG_7369.jpeg";
 import TempControl5 from "../assets/IMG_7443.jpg";
+import TempControl7 from "../assets/controller_pic2.png";
+import TempControl6 from "../assets/controller_pic.png";
 
 import Hermes1 from "../assets/Hermes Assembly.jpg";
 import Hermes3 from "../assets/IMG_4752 Large.jpeg";
@@ -32,6 +34,10 @@ import Drone3 from "../assets/drone_output.png";
 import Drone4 from "../assets/Screenshot 2025-02-25 010820.png";
 import Drone5 from "../assets/drone_3d_output.png";
 
+import DAQapp1 from "../assets/Picture_experiment_Setup.png";
+import DAQapp2 from "../assets/Picture2_experiment.png";
+import DAQapp3 from "../assets/Sensing_FrontEndCapture-ezgif.com-video-to-gif-converter.gif";
+import DAQapp4 from "../assets/VideoProject-ezgif.com-video-to-gif-converter.gif";
 
 //import TempControlVid from "../assets/IMG_7370.mp4";
 //import submarinePrint from "../assets/72315635017__05B0C390-E4D2-4AD5-ACB8-7003D435C667.jpg";
@@ -51,14 +57,33 @@ function Engineering() {
 
       <div className="projects-container">
         <div className="project-item">
+          
+          <h3 className="project-title">Data Acquisition Desktop Application - Spring 2025</h3>
+          <p className="project-description">
+          In this project I built a 5kHz sampling system for working with the Hyperion SI155 optical sensing instrument. The Luna Innovations Python API, for communicating with the SI155, is used to call for the peak wavelengths and intensity measurements of an array of FBG sensors. I set up a LAN connection to the instrument using TCP/IP protocol with a static IP address and a subnet mask configuration. The PyQt6 front-end application controls the experimental setup, graphs live data at 60Hz and writes to an HDF5 file at 5kHz.           
+          </p>
+          
+          <Carousel 
+            media={[DAQapp4, DAQapp3, DAQapp1, DAQapp2]} 
+            altText="Temperature Controller"
+          />
+
+          <p className="project-description">
+          The motivation for this project was to create a tool that can be deployed on a PC to interface with the SI155 sensing instrument giving you access to file handling tools, like immediate conversion to CSV. The current hardware uses an array of 5 FBG sensors to sample vibration and temperature effects on a stainless-steel structure surface. The codebase employs object-oriented programming and concurrent processing with PyQt threading to manage both front-end and back-end tasks efficiently.          
+          </p>
+
+        </div>
+
+
+        <div className="project-item">
         
-          <h3 className="project-title">PID Temperature Controller - Spring 2025</h3>
+          <h3 className="project-title">PID Temperature Controller - Fall 2024</h3>
           <p className="project-description">
           In this project I developed a handheld temperature control device to support sensor experiments. I wrote and tuned a PID controller for feedback temperature control using a J-type thermocouple with an MCP9600 amplifier board. This is a N-channel MOSFET circuit powered by a 25 V power supply, controlled through PWM with an Arduino Nano Every. Using a rotatory encoder for user input to manually tune PID parameters and set target temperatures, displaying system data on two OLED screens through i2c protocol.
           </p>
           
           <Carousel 
-            media={[TempControl5, TempControl4, TempControl1, TempControl3, TempControl2]} 
+            media={[TempControl5, TempControl6, TempControl4, TempControl7, TempControl1, TempControl3]} 
             altText="Temperature Controller"
           />
 

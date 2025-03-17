@@ -10,6 +10,8 @@ import PortfolioPie from "./components/PortfolioPie"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./styles.css";
 
+import { Analytics } from "@vercel/analytics/react"
+
 function App() {
   const [activeSection, setActiveSection] = useState("resume");
 
@@ -35,6 +37,9 @@ function App() {
           <Contact />
         </Section>
       </div>
+      
+      <Analytics />
+
     </div>
   );
 }

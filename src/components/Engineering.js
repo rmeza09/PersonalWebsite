@@ -89,7 +89,7 @@ function Engineering() {
           
           <h3 className="project-title">Data Acquisition Desktop Application - Spring 2025</h3>
           <p className="project-description">
-          In this project I built a 5kHz sampling system for working with the Hyperion SI155 optical sensing instrument. The Luna Innovations Python API, for communicating with the SI155, is used to call for the peak wavelengths and intensity measurements of an array of FBG sensors. I set up a LAN connection to the instrument using TCP/IP protocol with a static IP address and a subnet mask configuration. The PyQt6 front-end application controls the experimental setup, graphs live data at 60Hz and writes to an HDF5 file at 5kHz.           
+          In this project I built a 5kHz scanning system for working with the Hyperion SI155 optical sensing instrument. The Luna Innovations Python API, for communicating with the SI155, is used to call for the peak wavelengths and intensity measurements of an array of FBG sensors. I set up a LAN connection to the instrument using TCP/IP protocol with a static IP address and a subnet mask configuration. The PyQt6 front-end application controls the experimental setup, graphs live data and writes to an HDF5 file sampling at 10kHz.           
           </p>
           
           <Carousel 

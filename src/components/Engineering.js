@@ -39,6 +39,16 @@ import DAQapp2 from "../assets/Picture2_experiment.png";
 import DAQapp3 from "../assets/Sensing_FrontEndCapture-ezgif.com-video-to-gif-converter.gif";
 import DAQapp4 from "../assets/VideoProject-ezgif.com-video-to-gif-converter.gif";
 
+import Dyno1 from "../assets/ArticleMount.png";
+//import Dyno2 from "../assets/ArticleMount2.png";
+import Dyno3 from "../assets/ArticleMount3.png";
+import Dyno4 from "../assets/BrakeAssembly.png";
+import Dyno5 from "../assets/BrakeAssembly2.png";
+//import Dyno6 from "../assets/DynoAssembly.png";
+import Dyno7 from "../assets/DynoAssembly2.png";
+import Dyno8 from "../assets/FEA.png";
+import Dyno9 from "../assets/QuakeRestraint.png";
+
 //import TempControlVid from "../assets/IMG_7370.mp4";
 //import submarinePrint from "../assets/72315635017__05B0C390-E4D2-4AD5-ACB8-7003D435C667.jpg";
 
@@ -56,6 +66,25 @@ function Engineering() {
       </div>
 
       <div className="projects-container">
+        <div className="project-item">
+          
+          <h3 className="project-title">JPL - Dynamometer Assembly - Summer/Fall 2023</h3>
+          <p className="project-description">
+          During my eight-month internship, I worked on Cryo Dyno, a cryogenic dynamometer. A dynamometer is a device used to measure the torque and power of a rotating assembly. I developed this robotic actuator test stand from problem definition in May, to manufacturing in August, and technical documentation in November. The goal was to create a test environment capable of stressing an actuator/motor under heavy cross-moment loading around the output shaft while operating in extreme temperatures. 
+          </p>
+          
+          <Carousel 
+            media={[Dyno5, Dyno7, Dyno1, Dyno3, Dyno4, Dyno8, Dyno9]} 
+            altText="Temperature Controller"
+          />
+
+          <p className="project-description">
+          The cryogenic chamber chosen for this project can reach -184 degrees Celsius. The cross moment loading mechanism I designed can deliver 388Nm. The final assembly met targeted performance within 3% of the established goals. Beyond the CAD work, I supported design with FEA analysis for structural and temperature validation. Also, confirming CNC and water-jet manufacturability through Proto Labs. GD&T was implemented to maintain shaft alignments, communicate machining tolerances, and create dowel alignment features. Key challenges included bearing selections, bolted joint analysis, insulation design, and earthquake safety.
+          </p>
+
+        </div>
+
+
         <div className="project-item">
           
           <h3 className="project-title">Data Acquisition Desktop Application - Spring 2025</h3>
@@ -95,7 +124,7 @@ function Engineering() {
     
         <div className="project-item">
         
-          <h3 className="project-title">HERMES Lunar Transport Vehicle - Spring 2023</h3>
+          <h3 className="project-title">NASA - HERMES Lunar Transport Vehicle - Spring 2023</h3>
 
           <div className="button-container">             
             <a href="https://web1.eng.famu.fsu.edu/me/senior_design/2023/team517/" className="link-button" target="_blank" rel="noopener noreferrer">
@@ -114,6 +143,23 @@ function Engineering() {
           <p className="project-description">
           The motivation for this project was to create a highly compact lightweight design with the robustness to traverse rough lunar terrain while carrying cargo shipments. This was a proof of concept project to inspire design for lunar equipment vehicles needed to establish lunar habitation modules as part of NASA’s Artemis missions.
           </p>
+
+        </div>
+
+        
+
+        <div className="project-item">
+        
+          <h3 className="project-title">Quadcopter Control Design and Simulation - Fall 2023</h3>
+          <p className="project-description">
+          This project aimed to develop a target setpoint controller for a 4-rotor drone, leveraging a physics-informed control system to regulate its movement. The drone's dynamics were modeled using a state-space representation, capturing translational and rotational motion across three dimensions. A pole placement method was employed to design a stabilizing feedback controller, ensuring the drone could track desired positions and orientations effectively. Both animations display scenarios where an initial disturbance affects the flight trajectory chosen toward the targeted endpoint of x=0, y=0, z=0.           </p>        
+          <Carousel 
+            media={[Drone1, Drone4, Drone5, Drone2, Drone3]} 
+            altText="Temperature Controller"
+          />
+
+          <p className="project-description">
+          The primary motivation was to design a precise and robust control system that could actuate the drone efficiently using physics-based insights. The results confirmed that the controller successfully stabilized the drone, achieving smooth transitions toward desired states. The project reinforced key control theory concepts, including state feedback, pole placement, and system modeling, providing valuable insights for real-world UAV stabilization.          </p>
 
         </div>
 
@@ -136,21 +182,6 @@ function Engineering() {
             </a>
           </div>
 
-
-        </div>
-
-        <div className="project-item">
-        
-          <h3 className="project-title">Quadcopter Control Design and Simulation - Fall 2023</h3>
-          <p className="project-description">
-          This project aimed to develop a target setpoint controller for a 4-rotor drone, leveraging a physics-informed control system to regulate its movement. The drone's dynamics were modeled using a state-space representation, capturing translational and rotational motion across three dimensions. A pole placement method was employed to design a stabilizing feedback controller, ensuring the drone could track desired positions and orientations effectively. Both animations display scenarios where an initial disturbance affects the flight trajectory chosen toward the targeted endpoint of x=0, y=0, z=0.           </p>        
-          <Carousel 
-            media={[Drone1, Drone4, Drone5, Drone2, Drone3]} 
-            altText="Temperature Controller"
-          />
-
-          <p className="project-description">
-          The primary motivation was to design a precise and robust control system that could actuate the drone efficiently using physics-based insights. The results confirmed that the controller successfully stabilized the drone, achieving smooth transitions toward desired states. The project reinforced key control theory concepts, including state feedback, pole placement, and system modeling, providing valuable insights for real-world UAV stabilization.          </p>
 
         </div>
 

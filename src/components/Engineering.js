@@ -39,13 +39,13 @@ import DAQapp2 from "../assets/Picture2_experiment.png";
 import DAQapp3 from "../assets/Sensing_FrontEndCapture-ezgif.com-video-to-gif-converter.gif";
 import DAQapp4 from "../assets/VideoProject-ezgif.com-video-to-gif-converter.gif";
 
-import Dyno1 from "../assets/ArticleMount.png";
+import Dyno1 from "../assets/section3zoomimage.png";
 //import Dyno2 from "../assets/ArticleMount2.png";
 import Dyno3 from "../assets/ArticleMount3.png";
 import Dyno4 from "../assets/BrakeAssembly.png";
-import Dyno5 from "../assets/BrakeAssembly2.png";
+import Dyno5 from "../assets/overviewimage.png";
 //import Dyno6 from "../assets/DynoAssembly.png";
-import Dyno7 from "../assets/DynoAssembly2.png";
+import Dyno7 from "../assets/section2image.png";
 import Dyno8 from "../assets/FEA.png";
 import Dyno9 from "../assets/QuakeRestraint.png";
 
@@ -74,7 +74,7 @@ function Engineering() {
           </p>
           
           <Carousel 
-            media={[Dyno5, Dyno7, Dyno1, Dyno3, Dyno4, Dyno8, Dyno9]} 
+            media={[Dyno5, Dyno7, Dyno1, Dyno3, Dyno4, Dyno8]} 
             altText="Temperature Controller"
           />
 

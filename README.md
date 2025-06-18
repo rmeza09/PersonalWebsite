@@ -32,7 +32,7 @@ Clone the repository and install dependencies:
 cd your-directory
 ```
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/rmeza09/PersonalWebsite.git
 ```
 ```bash
 npm install

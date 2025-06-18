@@ -10,25 +10,29 @@ A user friendly web app I use to display some of the cool events in my engineeri
 - [NPM](https://www.npmjs.com/) – For managing dependencies and scripts
 
 ## 📁 Folder Structure
-├── backend/ - a practice run in testing for using FastAPI
-├── public/ - Static files (index.html, favicon, etc.)
-├── src/ - Main React components and styling
-│ ├── components/
-│ ├── App.js
-│ ├── index.js
-│ └── styles/
-├── webpack.config.js - Webpack configuration
-├── .babelrc # Babel configuration
-├── package.json - Dependencies and scripts
-└── README.md
+- backend/ - a practice run in testing for using FastAPI
+- public/ - Static files (index.html, favicon, etc.)
+- src/ - Main React components and styling
+    - components/
+    - App.js
+    - index.js
+    - styles/
+- webpack.config.js - Webpack configuration
+- .babelrc # Babel configuration
+- package.json - Dependencies and scripts
+- README.md
 
 ## 🚀 Getting Started
 
 Clone the repository and install dependencies:
 
 ```bash
+cd your-directory
+
+```bash
 git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
+
+```bash
 npm install
 nmp start
 

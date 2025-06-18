@@ -13,7 +13,8 @@ A user friendly web app I use to display some of the cool events in my engineeri
 
 ## 📁 Folder Structure
 - backend/ - a practice run in testing for using FastAPI
-- public/ - Static files (index.html, favicon, etc.)
+    - requirements.txt - Dependencies
+- public/ - Static files (index.html, etc.)
 - src/ - Main React components and styling
     - components/
     - App.js

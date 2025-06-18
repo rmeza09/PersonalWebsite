@@ -1,5 +1,7 @@
 # My personal porfolio website!
-A user friendly web app I use to display some of the cool events in my engineering career and the highlight projects I have worked on. I used this app to practice some front end development teaching myself the React framework with javascript and vanilla css. Here I was able to learn to make some components for organizing content: page navigation, image carousels, file download buttons, link buttons. Also learning to deploy the a site to production with a serverless solution, Vercel.
+A user friendly web app I use to display some of the cool events in my engineering career and the highlight projects I have worked on. I used this app to practice some front end development teaching myself the React framework with javascript and vanilla css. Here I was able to learn to make some components for organizing content: page navigation, image carousels, file download buttons, link buttons. Also learning to deploy the a site to production with a serverless solution, Vercel. The vercel solution allowed me to integrate site analytics and continous production updates through Git.
+
+### 🔗 Live Site: [https://rmeza09.vercel.app/](https://rmeza09.vercel.app/)
 
 ## 🧰 Built with
 
@@ -28,13 +30,20 @@ Clone the repository and install dependencies:
 
 ```bash
 cd your-directory
-
+```
 ```bash
 git clone https://github.com/your-username/your-portfolio.git
-
+```
 ```bash
 npm install
-nmp start
+```
+```bash
+npm start
+```
+
+
+
+
 
 
 

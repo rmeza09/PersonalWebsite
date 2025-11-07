@@ -5,16 +5,36 @@ import IMG_6784 from "../assets/IMG_6784.jpg";
 import OE12922 from "../assets/_OE12922.jpg";
 import IMG_3399 from "../assets/IMG_3399.jpg";
 import IMG_4667 from "../assets/IMG_4667.jpg";
+import IMG_466999 from "../assets/DSCF0433.JPG";
+import IMG_4669949494 from "../assets/IMG_7801.jpg";
 
 function Experiences() {
   return (
     <div className="experiences-container">
       <div className="item-container">
+        <img src={IMG_466999} alt="MS Defense" className="profile-image" />
+        <div className="item-text">
+          <h2>College Park, MD - 2025</h2>
+          <p>
+          In November 2025, I defended my Master of Science research thesis with the University of Maryland. Through this experience I researched a novel application of sensors and design for high-performance aircraft.          </p>
+        </div>
+      </div>
+
+      <div className="item-container">
+        <img src={IMG_4669949494} alt="Langley Experiments" className="profile-image" />
+        <div className="item-text">
+          <h2>Hampton, Virginia - 2025</h2>
+          <p>
+          In June 2025, I lead a week-long experimental campaign at NASA Langley’s Mach 6 hypersonic tunnel facilities. I worked with the engineering teams there to test the hardware design I developed for sensing structural performance in high-speed flows. The finned flat plate model pictured is the model we worked to instrument and test in the tunnel.          </p>
+        </div>
+      </div>
+
+      <div className="item-container">
         <img src={IMG_7025} alt="IMECE presentation" className="profile-image" />
         <div className="item-text">
           <h2>Portland, Oregon - 2024</h2>
           <p>
-          In November 2024, I had the incredible opportunity to attend and present a poster on my research at the ASME International Mechanical Engineering Congress in Portland, Oregon. Over three enriching days, I learned about state-of-the-art research, connected with fellow engineers, and engaged in discussions on the future of fiber optic health monitoring systems for structural state evaluation.          </p>
+          In November 2024, I had the incredible opportunity to attend and present a poster on my research at the ASME International Mechanical Engineering Congress in Portland, Oregon. Over three days, I learned about state-of-the-art research, connected with fellow engineers, and engaged in discussions on the future of fiber optic health monitoring systems for structural state evaluation.          </p>
         </div>
       </div>
 

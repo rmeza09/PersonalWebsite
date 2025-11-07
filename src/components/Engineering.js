@@ -7,11 +7,11 @@ import AFOSRLogo from "../assets/AFOSR+Logo.png";
 
 
 import TempControl1 from "../assets/IMG_7347.jpg";
-import TempControl2 from "../assets/IMG_7318.jpeg";
+import TempControl2 from "../assets/Picture22222.jpg";
 import TempControl3 from "../assets/IMG_7351.jpeg";
 import TempControl4 from "../assets/IMG_7369.jpeg";
 import TempControl5 from "../assets/IMG_7443.jpg";
-import TempControl7 from "../assets/controller_pic2.png";
+
 import TempControl6 from "../assets/controller_pic.png";
 
 import Hermes1 from "../assets/Hermes Assembly.jpg";
@@ -48,6 +48,9 @@ import Dyno5 from "../assets/overviewimage.png";
 import Dyno7 from "../assets/section2image.png";
 import Dyno8 from "../assets/FEA.png";
 import Dyno9 from "../assets/QuakeRestraint.png";
+
+import thesis1 from "../assets/Untitled12.gif";
+import thesis2 from "../assets/Picture1.png";
 
 //import TempControlVid from "../assets/IMG_7370.mp4";
 //import submarinePrint from "../assets/72315635017__05B0C390-E4D2-4AD5-ACB8-7003D435C667.jpg";
@@ -112,7 +115,7 @@ function Engineering() {
           </p>
           
           <Carousel 
-            media={[TempControl5, TempControl6, TempControl4, TempControl7, TempControl1, TempControl3]} 
+            media={[TempControl5, TempControl2, TempControl6, TempControl4, TempControl1, TempControl3]} 
             altText="Temperature Controller"
           />
 
